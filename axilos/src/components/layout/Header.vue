@@ -1,33 +1,52 @@
 <template>
-    <div>
-  <div class="flex h-screen items-center justify-center bg-gray-900 p-5">
-    <div class="grid md:grid-cols-2 grid-cols-1 items-center gap-10 md:px-10">
-      <div>
-        <h1 class="mb-2 text-3xl font-bold text-white"><span class="text-green-500">Hi,</span> I'm Full Stack Developer</h1>
-        <p class="mb-6 text-white">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aut excepturi magnam enim officiis facilis numquam corporis quos accusantium tempora, dolores quod cum facere architecto soluta atque corrupti a alias perferendis.</p>
-        <div class="flex justify-center space-x-5">
-          <button class="flex w-full items-center justify-center gap-1 rounded-2xl bg-rose-500 p-5 py-3 font-semibold text-white hover:bg-rose-700">
-            Follow
-            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="h-6 w-6">
-              <path stroke-linecap="round" stroke-linejoin="round" d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12Z" />
-            </svg>
-          </button>
-          <button class="flex w-full items-center justify-center gap-2 rounded-2xl bg-white p-5 py-3 font-semibold">
-            Resume
-            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="h-6 w-6">
-              <path stroke-linecap="round" stroke-linejoin="round" d="m9 12.75 3 3m0 0 3-3m-3 3v-7.5M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
-            </svg>
-          </button>
+<!--  <section>
+    <div class="bg-zinc-800 text-white py-20">
+      <div class="container mx-auto flex flex-col md:flex-row items-center my-12 md:my-24">
+        <div class="flex flex-col w-full lg:w-1/3 justify-center items-start p-8">
+          <h1 class="text-3xl md:text-5xl p-2 text-yellow-300 tracking-loose">TechFest</h1>
+          <h2 class="text-3xl md:text-5xl leading-relaxed md:leading-snug mb-2">Space : The Timeless Infinity
+          </h2>
+          <p class="text-sm md:text-base text-gray-50 mb-4">Explore your favourite events and
+            register now to showcase your talent and win exciting prizes.</p>
+          <a href="#"
+            class="bg-transparent hover:bg-yellow-300 text-yellow-300 hover:text-black rounded shadow hover:shadow-lg py-2 px-4 border border-yellow-300 hover:border-transparent">
+            Explore Now</a>
         </div>
-      </div>
-      <div>
-        <img src="https://images.pexels.com/photos/415829/pexels-photo-415829.jpeg?auto=compress&cs=tinysrgb&w=600" alt="" class="md:size-96 size-72 rounded-full " />
-      </div>
-    </div>
-  </div>
-</div>
+        <div class="p-8 mt-12 mb-6 md:mb-0 md:mt-0 ml-0 md:ml-12 lg:w-2/3  justify-center">
+          <div class="h-48 flex flex-wrap content-center">
+            <div>
+              <img class="inline-block mt-28 hidden xl:block" src="https://user-images.githubusercontent.com/54521023/116969935-c13d5b00-acd4-11eb-82b1-5ad2ff10fb76.png"></div>
+              <div>
+                <img class="inline-block mt-24 md:mt-0 p-8 md:p-0"  src="https://user-images.githubusercontent.com/54521023/116969931-bedb0100-acd4-11eb-99a9-ff5e0ee9f31f.png"></div>
+                <div>
+                  <img class="inline-block mt-28 hidden lg:block" src="https://user-images.githubusercontent.com/54521023/116969939-c1d5f180-acd4-11eb-8ad4-9ab9143bdb50.png"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+  </section>-->
 
+  <section class="dark:bg-gray-100 dark:text-gray-800">
+		<div class="container flex flex-col justify-center p-6 mx-auto sm:py-12 lg:py-24 lg:flex-row lg:justify-center">
+			<div class="flex items-center justify-center p-6 mt-8 lg:mt-0 h-72 sm:h-80 lg:h-96 xl:h-112 2xl:h-128">
+				<img src="../../assets/svg/Business_SVG.svg" alt="" class="object-contain h-72 sm:h-80 lg:h-96 xl:h-112 2xl:h-128">
+			</div>
+			<div class="flex flex-col justify-center p-6 text-center rounded-sm lg:max-w-md xl:max-w-lg lg:text-left">
+				<h1 class="text-5xl font-bold leading-none sm:text-6xl">Ac mattis
+					<span class="dark:text-violet-600">senectus</span>erat pharetra
+				</h1>
+				<p class="mt-6 mb-8 text-lg sm:mb-12">Dictum aliquam porta in condimentum ac integer
+					<br class="hidden md:inline lg:hidden">turpis pulvinar, est scelerisque ligula sem
+				</p>
+				<div class="flex flex-col space-y-4 sm:items-center sm:justify-center sm:flex-row sm:space-y-0 sm:space-x-4 lg:justify-start">
+					<a rel="noopener noreferrer" href="#" class="px-8 py-3 text-lg font-semibold rounded dark:bg-violet-600 dark:text-gray-50">Suspendisse</a>
+					<a rel="noopener noreferrer" href="#" class="px-8 py-3 text-lg font-semibold border rounded dark:border-gray-800">Malesuada</a>
+				</div>
+			</div>
+		</div>
+	</section>
 </template>
+
 <script>
 
 </script>
