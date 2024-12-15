@@ -31,7 +31,7 @@
 			<div class="flex items-center justify-center p-6 mt-8 lg:mt-0 h-72 sm:h-80 lg:h-96 xl:h-112 2xl:h-128">
 				<img src="../../assets/svg/Business_SVG.svg" alt="" class="object-contain h-72 sm:h-80 lg:h-96 xl:h-112 2xl:h-128">
 			</div>
-			<div class="flex flex-col justify-center p-6 text-center rounded-sm lg:max-w-md xl:max-w-lg lg:text-left">
+			<div class="flex flex-col justify-center pt-6 text-center rounded-sm lg:max-w-md xl:max-w-lg lg:text-left">
 				<h1 class="text-5xl font-bold leading-none sm:text-6xl">Ac mattis
 					<span class="dark:text-violet-600">senectus</span>erat pharetra
 				</h1>
@@ -48,5 +48,7 @@
 </template>
 
 <script>
+
+
 
 </script>

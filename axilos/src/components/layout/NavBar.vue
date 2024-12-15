@@ -1,67 +1,219 @@
 <template>
-  <!-- Navigációs menü -->
-  <nav class="bg-purple-600">
-    <div class="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
-      <div class="relative flex h-16 items-center justify-between">
-        <!-- Mobilmenü gomb -->
-        <div class="absolute inset-y-0 left-0 flex items-center sm:hidden">
-          <button
-            type="button"
-            class="relative inline-flex items-center justify-center rounded-md p-2 text-gray-400 hover:bg-gray-700 hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white"
-            aria-controls="mobile-menu"
-            aria-expanded="false"
-            @click="toggleMenu"
+  <div class="bg-purple-600 text-white">
+  <div
+    class="px-4 py-6 mx-auto lg:py-8 sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 "
+  >
+    <div
+      class="relative flex items-center justify-between lg:justify-center lg:space-x-16"
+    >
+      <ul class="flex items-center hidden space-x-8 lg:flex">
+        <li>
+          <a
+            href="/"
+            aria-label="Our product"
+            title="Our product"
+            class="font-medium tracking-wide text-white transition-colors duration-200 hover:text-deep-purple-accent-400"
+            >Főoldal</a
           >
-            <span class="sr-only">Open main menu</span>
-            <!-- Menü ikonok állapottól függően -->
-            <svg v-if="!isMenuOpen" class="block size-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
-              <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
-            </svg>
-            <svg v-else class="block size-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
-              <path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12" />
-            </svg>
-          </button>
-        </div>
-        <!-- Navigációs elemek -->
-        <div class="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start">
-          <div class="flex shrink-0 items-center">
-            <img class="h-8 w-auto" src="https://tailwindui.com/plus/img/logos/mark.svg?color=indigo&shade=500" alt="Your Company">
-          </div>
-          <div class="hidden sm:ml-6 sm:block">
-            <div class="flex space-x-4">
-              <a href="#" id="nav-link" class="rounded-md px-3 py-2 text-sm font-medium text-white" aria-current="page">Dashboard</a>
-              <a href="#" id="nav-link" class="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white">Team</a>
-              <a href="#" id="nav-link" class="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white">Projects</a>
-              <a href="#" id="nav-link" class="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white">Calendar</a>
+        </li>
+        <li>
+          <a
+            href="/"
+            aria-label="Our product"
+            title="Our product"
+            class="font-medium tracking-wide text-white transition-colors duration-200 hover:text-deep-purple-accent-400"
+            >Áraink</a
+          >
+        </li>
+        <li>
+          <a
+            href="/"
+            aria-label="Product pricing"
+            title="Product pricing"
+            class="font-medium tracking-wide text-white transition-colors duration-200 hover:text-deep-purple-accent-400"
+            >Elérhetőség</a
+          >
+        </li>
+      </ul>
+      <a
+        href="/"
+        aria-label="Company"
+        title="Company"
+        class="inline-flex items-center"
+      >
+        <svg
+          class="w-8 text-deep-purple-accent-400"
+          viewBox="0 0 24 24"
+          stroke-linejoin="round"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-miterlimit="10"
+          stroke="currentColor"
+          fill="none"
+        >
+          <rect x="3" y="1" width="7" height="12"></rect>
+          <rect x="3" y="17" width="7" height="6"></rect>
+          <rect x="14" y="1" width="7" height="6"></rect>
+          <rect x="14" y="11" width="7" height="12"></rect>
+        </svg>
+        <span
+          class="ml-2 text-xl font-bold tracking-wide text-white uppercase"
+          >Axilos</span
+        >
+      </a>
+      <ul class="flex items-center hidden space-x-8 lg:flex">
+        <li>
+          <a
+            href="/"
+            aria-label="About us"
+            title="About us"
+            class="font-medium tracking-wide text-white transition-colors duration-200 hover:text-deep-purple-accent-400"
+            >Keresés</a
+          >
+        </li>
+      </ul>
+      <div class="lg:hidden">
+        <button
+          aria-label="Open Menu"
+          title="Open Menu"
+          class="p-2 -mr-1 transition duration-200 rounded focus:outline-none focus:shadow-outline hover:bg-deep-purple-50 focus:bg-deep-purple-50"
+          @click="isMenuOpen = true"
+        >
+          <svg class="w-5 text-gray-600" viewBox="0 0 24 24">
+            <path
+              fill="currentColor"
+              d="M23,13H1c-0.6,0-1-0.4-1-1s0.4-1,1-1h22c0.6,0,1,0.4,1,1S23.6,13,23,13z"
+            ></path>
+            <path
+              fill="currentColor"
+              d="M23,6H1C0.4,6,0,5.6,0,5s0.4-1,1-1h22c0.6,0,1,0.4,1,1S23.6,6,23,6z"
+            ></path>
+            <path
+              fill="currentColor"
+              d="M23,20H1c-0.6,0-1-0.4-1-1s0.4-1,1-1h22c0.6,0,1,0.4,1,1S23.6,20,23,20z"
+            ></path>
+          </svg>
+        </button>
+        <div v-if="isMenuOpen" class="absolute top-0 left-0 w-full">
+          <div class="p-5 bg-white border rounded shadow-sm">
+            <div class="flex items-center justify-between mb-4">
+              <div>
+                <a
+                  href="/"
+                  aria-label="Company"
+                  title="Company"
+                  class="inline-flex items-center"
+                >
+                  <svg
+                    class="w-8 text-deep-purple-accent-400"
+                    viewBox="0 0 24 24"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-miterlimit="10"
+                    stroke="currentColor"
+                    fill="none"
+                  >
+                    <rect x="3" y="1" width="7" height="12"></rect>
+                    <rect x="3" y="17" width="7" height="6"></rect>
+                    <rect x="14" y="1" width="7" height="6"></rect>
+                    <rect x="14" y="11" width="7" height="12"></rect>
+                  </svg>
+                  <span
+                    class="ml-2 text-xl font-bold tracking-wide text-gray-800 uppercase"
+                    >Company</span
+                  >
+                </a>
+              </div>
+              <div>
+                <button
+                  aria-label="Close Menu"
+                  title="Close Menu"
+                  class="p-2 -mt-2 -mr-2 transition duration-200 rounded hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
+                  @click="isMenuOpen = false"
+                >
+                  <svg class="w-5 text-gray-600" viewBox="0 0 24 24">
+                    <path
+                      fill="currentColor"
+                      d="M19.7,4.3c-0.4-0.4-1-0.4-1.4,0L12,10.6L5.7,4.3c-0.4-0.4-1-0.4-1.4,0s-0.4,1,0,1.4l6.3,6.3l-6.3,6.3 c-0.4,0.4-0.4,1,0,1.4C4.5,19.9,4.7,20,5,20s0.5-0.1,0.7-0.3l6.3-6.3l6.3,6.3c0.2,0.2,0.5,0.3,0.7,0.3s0.5-0.1,0.7-0.3 c0.4-0.4,0.4-1,0-1.4L13.4,12l6.3-6.3C20.1,5.3,20.1,4.7,19.7,4.3z"
+                    ></path>
+                  </svg>
+                </button>
+              </div>
             </div>
+            <nav>
+              <ul class="space-y-4">
+                <li>
+                  <a
+                    href="/"
+                    aria-label="Our product"
+                    title="Our product"
+                    class="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400"
+                    >Product</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="/"
+                    aria-label="Our product"
+                    title="Our product"
+                    class="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400"
+                    >Features</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="/"
+                    aria-label="Product pricing"
+                    title="Product pricing"
+                    class="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400"
+                    >Pricing</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="/"
+                    aria-label="About us"
+                    title="About us"
+                    class="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400"
+                    >About us</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="/"
+                    aria-label="Sign in"
+                    title="Sign in"
+                    class="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400"
+                    >Sign in</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="/"
+                    class="inline-flex items-center justify-center w-full h-12 px-6 font-medium tracking-wide text-white transition duration-200 rounded shadow-md bg-deep-purple-accent-400 hover:bg-deep-purple-accent-700 focus:shadow-outline focus:outline-none"
+                    aria-label="Sign up"
+                    title="Sign up"
+                  >
+                    Sign up
+                  </a>
+                </li>
+              </ul>
+            </nav>
           </div>
         </div>
       </div>
     </div>
-    <!-- Mobil menü -->
-    <div v-if="isMenuOpen" class="sm:hidden" id="mobile-menu">
-      <div class="space-y-1 px-2 pb-3 pt-2">
-        <a href="#" class="block rounded-md px-3 py-2 text-base font-medium text-white" aria-current="page">Dashboard</a>
-        <a href="#" class="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-gray-700 hover:text-white">Team</a>
-        <a href="#" class="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-gray-700 hover:text-white">Projects</a>
-        <a href="#" class="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-gray-700 hover:text-white">Calendar</a>
-      </div>
-    </div>
-  </nav>
+  </div>
+</div>
 </template>
 
 <script>
 export default {
   data() {
     return {
-      isMenuOpen: false, // Menü nyitottságának állapota
+      isMenuOpen: false,
     };
-  },
-  methods: {
-    toggleMenu() {
-      // Menü állapotának váltása
-      this.isMenuOpen = !this.isMenuOpen;
-    },
   },
 };
 </script>
