@@ -5,7 +5,7 @@
         <span class="text-2xl font-medium">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam totam incidunt</span>
     </div>
 
-    <div class="px-4 pt-4 pb-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:pt-4 lg:pb-20">
+    <div class="px-4 pt-4 pb-4 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:pt-4 lg:pb-12">
       <div class="grid max-w-screen-lg gap-8 row-gap-5 md:row-gap-8 sm:mx-auto lg:grid-cols-2">
         <div class="transition duration-300 transform bg-white rounded shadow-sm hover:-translate-y-1 hover:shadow md:text-center">
           <div class="relative">
