@@ -64,7 +64,7 @@
       <ul class="flex items-center hidden space-x-8 lg:flex">
         <li>
           <a
-            href="/"
+            href="/entrepen"
             aria-label="About us"
             title="About us"
             class="font-medium tracking-wide text-white transition-colors duration-200 hover:text-deep-purple-accent-400"
